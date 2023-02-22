@@ -3,7 +3,6 @@ package tech.notgabs.contentcalendar.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
 import com.fasterxml.jackson.core.type.TypeReference;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import tech.notgabs.contentcalendar.model.Content;
 import tech.notgabs.contentcalendar.repository.ContentRepository;
@@ -12,7 +11,6 @@ import java.io.InputStream;
 import java.util.List;
 
 @Component
-@Profile("dev")
 public class DatabaseLoader implements CommandLineRunner {
     private final ContentRepository repository;
     private final ObjectMapper objectMapper;
