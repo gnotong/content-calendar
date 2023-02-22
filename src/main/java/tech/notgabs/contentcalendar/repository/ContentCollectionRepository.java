@@ -18,6 +18,6 @@ public class ContentCollectionRepository {
     }
 
     public Content findById(Integer id) {
-        return contents.stream().filter(c -> c.id().equals(id)).findFirst().orElseThrow(() -> new NoSuchElementException("Content " + id + " not found"));
+        return contents.stream().filter(c -> c.getId().equals(id)).findFirst().orElseThrow(() -> new NoSuchElementException("Content " + id + " not found"));
     }
 }
