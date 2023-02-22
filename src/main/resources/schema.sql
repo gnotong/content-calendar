@@ -1,6 +1,5 @@
 CREATE TABLE IF NOT EXISTS content(
-    id INT AUTO_INCREMENT,
+    id SERIAL PRIMARY KEY INT,
     title VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    PRIMARY KEY (id)
+    created_at TIMESTAMP NOT NULL
 );
